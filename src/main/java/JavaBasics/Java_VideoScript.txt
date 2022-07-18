@@ -1,0 +1,26 @@
+
+
+  // what is main function?
+  // main function is the entry point of the program.
+  // main function is the first function that is called when the program is executed.
+
+  // what is the purpose of main function?
+  // what are the arguments passed to main function?
+  // what are the return values of main function?
+
+  // what is the difference between static and non-static?
+  // static is used to declare a variable or method as a class level variable or method.
+  // non-static is used to declare a variable or method as an instance level variable or method.
+
+  // what is the difference between public and private?
+  // public is used to declare a variable or method as a public variable or method.
+  // private is used to declare a variable or method as a private variable or method.
+
+  // what is the difference between final and non-final?
+  // final is used to declare a variable or method as a final variable or method.
+  // non-final is used to declare a variable or method as a non-final variable or method.
+
+  // what is the difference between abstract and non-abstract?
+  // abstract is used to declare a class as an abstract class.
+  // non-abstract is used to declare a class as a non-abstract class.
+

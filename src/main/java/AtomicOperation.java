@@ -33,6 +33,36 @@ public class AtomicOperation {
       System.out.println("World");
     });
     executor3.shutdown();
+
+    ExecutorService executor4 = Executors.newSingleThreadScheduledExecutor();
+    executor4.submit(() -> {
+      System.out.println("Hello");
+    });
+    executor4.submit(() -> {
+      System.out.println("World");
+    });
+    executor4.shutdown();
+
+    ExecutorService executor5 = Executors.newCachedThreadPool();
+    executor5.submit(() -> {
+      System.out.println("Hello");
+    });
+    executor5.submit(() -> {
+      System.out.println("World");
+    });
+    executor5.shutdown();
+
+    CompletableFuture.supplyAsync(() -> {
+      return "Hello";
+    }).thenAccept(s -> {
+      System.out.println(s);
+    });
+    CompletableFuture.supplyAsync(() -> {
+      return "World";
+    }).thenAccept(s -> {
+      System.out.println(s);
+    });
+
     CompletableFuture.supplyAsync(() -> {
       try {
         Thread.sleep(5000);
